@@ -1,7 +1,5 @@
-
-
 class Car:
-    ''' A tentativa de representar um carro.'''
+    ''' A tentativa de represntar um carro.'''
 
     def __init__(self, marca, modelo, ano):
         ''' Inicializando os atributos de um carro.'''
@@ -35,3 +33,10 @@ class Car:
             self.km += km_andado
         else:
             print('Valores negativos não são aceitos!')
+
+
+class CarroEletrico(Car):
+
+    def __init__(self, marca, modelo, ano, bateria):
+        Car.__init__(marca, modelo, ano)
+        self.bateria = bateria
